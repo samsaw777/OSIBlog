@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+
+.lanimg{
+    width: 100%;
+}
+
+.lanimg > img{
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.applicationimg{
+    width: 100%;
+}
+
+.applicationimg > img{
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presentationimg{
+    width: 100%;
+}
+
+.presentationimg > img{
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    align-items: justify;
+}

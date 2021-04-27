@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>OSI Model</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class='mainbody'>
+        <div class="container">
+            <div class="headerdiv">
+                <h1>OSI: The 7 Layer Computer Architecture Model.</h1>
+            </div>
+            <div class="osimodelimg">
+                <img src="Images/osimodel.png" alt="OSI Model">
+            </div>
+            <div class="blogbody">
+                <div class='para1'>
+                     <h3>What is OSI Model?</h3>
+                     <p>The Open Systems Interconnection Model (OSI) is a framework used to describe the functions of a networking system.In 1983, the CCITT and ISO documents were merged to form The Basic Reference Model for Open Systems Interconnection, usually referred to as the Open Systems Interconnection Reference Model, OSI Reference Model, or simply OSI model. It was published in 1984 by both the ISO, as standard ISO 7498, and the renamed CCITT (now called the Telecommunications Standardization Sector of the International Telecommunication Union or ITU-T) as standard X.200.</p>
+                     <div><img src="Images/overvies.PNG" alt="OSI Layers"></div>
+                </div>
+                <div class="para2">
+                    <h3>Why OSI Model?</h3>
+                    <p class="reasonone">
+                        when two computer want to send data we can connect the computer using a lan cable and connectors to transfer data with the help of Network Interface Card.
+                        <div class="lanimg"><img src="Images/lan.PNG" alt="Example One"></div>
+                    </p>
+                    <p class="reasontwo">
+                        But when two computer with different operating system want to send data, then how can they send data??
+                        Here comes the Role of the OSI Model where the data processed over & different layer and then send over network to other devices.
+                    </p>
+                </div>
+                <div class="para3">
+                    <h1>OSI Model Layers</h1>
+                    <ol>
+                        <li>
+                            <h3>Application Layer:-</h3>
+                            <p class="aplication">
+                                <ol>
+                                    <li>As the name suggests application layer is a layer which works on the application but it does not includes computer applications like Chrome & Firefox, but contains <strong>Protocols </strong> which are needed to make this application works correctly in the network.</li>
+                                    <li>
+                                        Application layer work with the network applications which make use of the net like Chrome, Outlook,Skypee etc.
+                                        The netwrok applications like chrome or firefox does not resides in the layer but usees its protocols like <strong>HTTP</strong>and <strong>HTTPs</strong>
+                                    </li>
+                                    <li>
+                                        Bundle of protocols make the application layer.The data unit is called as <strong>Data or Message</strong>
+                                    </li>
+                                </ol>
+                                <p>Following are the activities done at application layer and which protocol they use for it.</p>
+                                <ol>
+                                    <li>File Transfer uses the <strong>FTP</strong> protocol to transfer the files.</li>
+                                    <li>Web Durfing used the <strong>HTTP/S</strong> protocol for web browsing.</li>
+                                    <li>Emails are send using the <strong>SMTP</strong> protocols.</li>
+                                    <li>Virtual Terminals used <strong>Telnet</strong> protocols.</li>
+                                </ol>
+                                <p>Hence applications protocols are used by the applications to perform user activities.</p>
+                            </p>
+                            <div class="applicationimg">
+                                <img src="Images/Application.PNG" alt="Application Protocols">
+                            </div>
+                        </li>
+                        <li>
+                            <h2>Presentation Layer</h2>
+                            <p>
+                                <ol>
+                                    <li>The main functioning of the presentation layer is to convert the data received from the application which is in the form of characters and number into the machine friendly language i.e <strong>Binary Code (01).</strong><p>Eg. ASCII -----> EBCDIC
+                                        (Convertion of ASCII code into EBCDIC). This is called as <strong>Data Translation.</strong>
+                                    </p>
+                                    </li>
+                                    <li>Then the converted data bits is then reduced which were representing the original data. This bit reduction process is called as <strong>Data Compression.</strong><p>This causes the data to be transfered very quickly.It is useful in real time video and audio streaming. </p>
+                                    </li>
+                                    <li>
+                                        To maintain the integrity of the data, the data is <strong>encrypted</strong> at the sender side and then again it is <strong>decrypted</strong> at the receiver side using <strong>SSL Protocol</strong> and other available protocol.
+                                    </li>
+                                    <li>After all the processes are done it transfer the data to the Session Layer.</li>
+                                </ol>
+                            </p>
+                            <div class="presentationimg">
+                                <img src="Images/Presentation.PNG" alt="Presentation Protocols">
+                            </div>
+                        </li>
+                        <li>
+                            <h2>Session Layer</h2>
+                            <p>
+                                <ol>
+                                    <li>Session layer is responsil for setting and managing the connection in the computer network.The Data unit in session layer is calles a <strong>PDU(Protocol Data Unit).</strong></li>
+                                    <li>Following are the main functionality of the session layer.</li>
+                                    <p>
+                                        <ul>
+                                            <li><strong>Authentication</strong></li>
+                                            <div>
+                                            <p><strong>Authentication</strong> is done to check whether the person who is going to access the web server is the owner of a given account in the web server.</p>
+                                            <p>Eg. Session layer forms a connection with the web server only when the user has logged in with correct username and password.</p>
+                                            <p>The main purpose of authentication is security. Without authentication, user's data stored on a server is unsafe on the grounds that everyone can get it from the server.</p>
+                                            </div>
+                                            <li><strong>Authorization</strong></li>
+                                            <div>
+                                                <p>After authentication comes <strong>authorization</strong> which means after user sucessfully logged in on server has the access to do all the task present on the server.</p>
+                                                <p>Eg. When a user logs on to server authorization is carried on to check whether the user have the access the file present on the server or not.</p>
+                                            </div>
+                                        </ul>
+                                    </p>
+                                </ol>
+                            </p>
+                            <div><img src="Images/session.png" alt="Session" /></div>
+                        </li>
+                        <li>
+                            <h2>Transport Layer</h2>
+                            <ol>
+                                <li>Transport layer is the 4th layer of the OSI Model.</li>
+                                <li>The main role of the transport layer is to provide the communication services directly to the application processes running on different hosts.</li>
+                                <li>The data sent from the session layer is then divided into small packets called <strong>Segments</strong>, in which every segments is attached with a <strong>header</strong> which contains sending and receiver <strong>Ports.</strong></li>
+                                <li>Following are the Functions involed in transport layer.</li>
+                                <p>
+                                    <ul>
+                                        <li><strong>Service point addressing</strong></li>
+                                        <div>
+                                        <p>In this function data can be transfered from not only from one computer to other computer but from one process to another process.</p>
+                                        <p>This is done semlessly because of the header added to the data segments which contains the sender or receiver Ports.</p>
+                                        </div>
+                                        <li><strong>Segmentation and Reassembly</strong></li>
+                                        <div>
+                                            <p>Here the data are converted into segments and each segment is assigned a unique value for its identification.</p>
+                                            <p>When the data is received at the receiver the transport layer then reassembles the segments according to the unique number assigned.</p>
+                                        </div>
+                                    </ul>
+                                </p>
+                            </ol>
+                            <div><img src="Images/Transport.png" alt="Transport"></div>
+                        </li>
+                        <li>
+                            <h2>Network Layer</h2>
+                            <ol>
+                                <li>Network Layer is the 3rd layer of the OSI Model.</li>
+                                <li>It handles the service requests from the transport layer and further forwards the service request to the data link layer.</li>
+                                <li>The main role of the network layer is to move the packets from sending host to the receiving host.</li>
+                                <p>Following are the Functionality of network layer.</p>
+                                <div>
+                                    <ul>
+                                        <li><strong>Addressing</strong></li>
+                                        <div>
+                                            <p>A network layer adds the source and destination address into the header of the Packet. It is used to identify the device on the internet.</p>
+                                        </div>
+                                        <li><strong>Routing</strong></li>
+                                        <div>
+                                            <p>It determines  the best optimal path to send the data from source to destination.</p>
+                                        </div>
+                                        <li><strong>Packeting</strong></li>
+                                        <div>
+                                            <p>The process of coverting the higher level data into packet.</p>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </ol>
+                            <div><img src="Images/Network.png" alt="Network"></div>
+                        </li>
+                        <li>
+                            <h2>Data-Link layer</h2>
+                            <ol>
+                                <li>The data link layer is a 4th layer from the top and 2nd layer from the bottom.</li>
+                                <div>
+                                    <p>Following are the main fuctionality of the Data-Link Layer.</p>
+                                    <ul>
+                                        <li>
+                                            <strong>Framing</strong>
+                                            <div>
+                                                <p>The data received fron network layer is converted into frame in which a trailer is added to the frame.</p>
+                                                <p>The header which is added contains the hardware and source destination.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>Physical Addressing</strong>
+                                            <div>
+                                                <p>Physical addressing is generally sending the data to the desired address. The address here is generally <strong>MAC address</strong>.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong>Flow Control</strong>
+                                            <p>It is the main functionality of the data link layer. It is the technique which is used to maintain the constant data rate on both the sides.</p>
+                                            <p>It also make sure that the sending speed of the sender does not exceeds the receiving speed of the reeiver.</p>
+                                        </li>
+                                        <li>
+                                            <strong>Error Control</strong>
+                                            <p>Error control is done by attaching a CRC before send the data to the physical layer.If any error occurs the receiver sends the acknowledgment for resending the corrupted frames.</p>
+                                        </li>
+                                        <li>
+                                            <strong>Access Control</strong>
+                                            <p>It determines which device has control over the link when two or more devices are connected at same communication channel.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </ol>
+                            <div><img src="Images/Data.PNG" alt="Data"></div>
+                        </li>
+                        <li>
+                            <h2>Presentation Layer</h2>
+                            <ol>
+                                <li>Presentation Layer is the 7th layer from the top and 1st layer from the bottom.</li>
+                                <li>It converts the bits data into signal an transmits over a deticated medium.</li>
+                                <li>Following are the functionality of presentation layers.</li>
+                                <div>
+                                    <ul>
+                                        <li><strong>Line Configuration</strong></li>
+                                        <div>
+                                            <p>It defines the way how two or more devices can be connected.</p>
+                                        </div>
+                                        <li><strong>Data Transmission</strong></li>
+                                        <div>
+                                            <p>It defines the transmission mode whether it is <strong>simplex</strong>, <strong>Half-duplex</strong> or <strong>Full-duplex</strong> mode between the two devices on the network. </p>
+                                        </div>
+                                        <li><strong>Topology</strong></li>
+                                        <div>
+                                            <p>It defines how network devices are arranged.</p>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </ol>
+                            <div><img src="Images/Physical.png" alt="Physical" /></div>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="para4">
+                    <h3>Flow of data in OSI Model</h3>
+                    <img src="Images/flow.png" alt="Data Flow">
+                    <p>Above diagram shows how the data sent and processed over the 7 layer from sender to receiver.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
