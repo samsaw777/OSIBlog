@@ -45,6 +45,21 @@
     margin-right: auto;
 }
 
-p{
-    align-items: justify;
+.sessionimg,.transportimg,.networkimg,.physicalimg>img{
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.dataimg>img{
+    width: 400px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
