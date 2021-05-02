@@ -248,6 +248,61 @@ h2{
 
     .osimodelimg>img {
         width: 350px;
+        /* display: block;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .overviewimg>img {
+        width: 300px;
+        /* display: block;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .lanimg > img {
+        width: 360px;
+        /* height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px; */
+    }
+
+    .applicationimg > img {
+        width: 390px;
+        height: 230px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sessionimg>img{
+        width: 370px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .transportimg>img {
+        width: 380px;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .networkimg>img{
+        width: 380px;
+        height: 220px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .para4>img {
+        width: 350px;
         display: block;
         margin-left: auto;
         margin-right: auto;
