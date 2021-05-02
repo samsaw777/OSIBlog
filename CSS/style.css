@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-align: justify;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 
@@ -10,6 +11,7 @@
     margin-bottom: 50px;
 }
 .osimodelimg>img {
+    width: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -41,11 +43,12 @@
 }
 
 .lanimg > img{
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 .applicationimg{
@@ -72,7 +75,7 @@
     margin-right: auto;
 }
 
-.sessionimg,.transportimg,.networkimg,.physicalimg>img{
+.sessionimg>img,.transportimg>img,.networkimg>img,.physicalimg>img{
     width: 600px;
     height: 300px;
     display: block;
@@ -99,8 +102,144 @@
 }
 
 .para1 > p{
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.reasonone{
+    font-size: 17px;
+}
+
+
+.oldiv{
+    font-size: 16px;
+}
+
+.oldiv>li{
+    margin-bottom: 5px;
+}
+
+.extp{
+    font-size: 17px;
+    margin: 5px 5px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.extp1{
+    font-size: 16px;
+}
+
+strong{
+    font-weight: 900;
+}
+
+.uldiv{
+    font-size: 16px;
+}
+
+.uldiv>li>strong{
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+h2{
+    font-weight: 900;
+}
+
+.hed{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.para2 > h2{
+    font-weight: 700;
+}
+
+.para1 > h2{
+    font-weight: 700;
+}
+
+.para3 > h1{
+    font-weight: 700;
+}
+
+.para4 > h2{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.endpara{
+    font-size: 16px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive CSS */
+
+@media only screen and (max-width:600px) {
+    
+}
