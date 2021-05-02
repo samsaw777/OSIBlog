@@ -176,6 +176,17 @@ h2{
     font-size: 16px;
 }
 
+.selfintroduction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.selfintroduction > p{
+    font-size: 20px;
+    font-weight: 900;
+}
+
 
 
 
